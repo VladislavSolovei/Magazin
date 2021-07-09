@@ -13,7 +13,63 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        
+        
+        
+        let str = "g5[j2[v]k]7[y]"
+
+        func decrypt(encrypted string: String) -> String {
+            var currentMultiplier = 0
+            var resultString = ""
+            var currentString = ""
+            var inside = false
+            var skipNextBracet = false
+
+            for character in string {
+                if character == "[" {
+                    if inside {
+                        skipNextBracet = true
+                    } else {
+                        inside = true
+                        continue
+                    }
+                }
+                if character == "]" {
+                    if skipNextBracet {
+                        skipNextBracet = false
+                    } else {
+                        inside = false
+                        let midResult = String(repeating: decrypt(encrypted: currentString), count: currentMultiplier)
+                        resultString.append(midResult)
+                        currentString = ""
+                        currentMultiplier = 0
+                        continue
+                    }
+                }
+                if inside {
+                    currentString.append(character)
+                    continue
+                }
+                if let multiplier = Int("\(character)") {
+                    currentMultiplier = multiplier
+                    continue
+                }
+                if currentMultiplier == 0 {
+                    resultString.append(character)
+                } else {
+                    currentString.append(character)
+                }
+            }
+            return resultString
+        }
+
+        print(decrypt(encrypted: str))
+        
+        
+        
+        
+        
         return true
     }
 
