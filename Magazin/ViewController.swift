@@ -13,10 +13,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var itemsLabel: UILabel!
     let green: Shop = Shop()
     var storageVC: SecondViewController?
+    var loadLogo: LoadLogoViewController?
+    
+    let image = "https://www.green-market.by/files//mainslider/25-pravila.jpg"
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        loadLogo = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "Logo")
+        
         storageVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "Storage") as? SecondViewController
         storageVC?.shop = green
         storageVC?.delegate = self

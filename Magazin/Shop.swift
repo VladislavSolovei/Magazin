@@ -33,6 +33,7 @@ class Shop {
         if items.isEmpty {
             addItemsFromStorage()
         }
+        func 
     }
 
     func moveItemsToShelf() {

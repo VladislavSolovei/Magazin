@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0488E17E2698C63B00E79622 /* LoadLogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488E17D2698C63B00E79622 /* LoadLogoViewController.swift */; };
 		ED13E0A2263C81A300D1CFBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED13E0A1263C81A300D1CFBC /* AppDelegate.swift */; };
 		ED13E0A4263C81A300D1CFBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED13E0A3263C81A300D1CFBC /* SceneDelegate.swift */; };
 		ED13E0A6263C81A300D1CFBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED13E0A5263C81A300D1CFBC /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0488E17D2698C63B00E79622 /* LoadLogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadLogoViewController.swift; sourceTree = "<group>"; };
 		ED13E09E263C81A300D1CFBC /* Magazin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magazin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED13E0A1263C81A300D1CFBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED13E0A3263C81A300D1CFBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				EDAF79212658332100F9B05F /* Shop.swift */,
 				ED3BE4262641B80D00224825 /* SecondViewController.swift */,
 				ED13E0A7263C81A300D1CFBC /* Main.storyboard */,
+				0488E17D2698C63B00E79622 /* LoadLogoViewController.swift */,
 				ED13E0AA263C81A400D1CFBC /* Assets.xcassets */,
 				ED13E0AC263C81A400D1CFBC /* LaunchScreen.storyboard */,
 				ED13E0AF263C81A400D1CFBC /* Info.plist */,
@@ -271,6 +274,7 @@
 				EDAF79222658332100F9B05F /* Shop.swift in Sources */,
 				ED3BE4272641B80D00224825 /* SecondViewController.swift in Sources */,
 				ED13E0A6263C81A300D1CFBC /* ViewController.swift in Sources */,
+				0488E17E2698C63B00E79622 /* LoadLogoViewController.swift in Sources */,
 				ED13E0A2263C81A300D1CFBC /* AppDelegate.swift in Sources */,
 				ED13E0A4263C81A300D1CFBC /* SceneDelegate.swift in Sources */,
 			);
